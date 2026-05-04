@@ -1,3 +1,6 @@
+@use 'sass:math';
+@use 'vars' as *;
+
 .site-header {
     margin-top: 55px;
 }
@@ -382,7 +385,7 @@ h2.site-title {
   .hamburger-inner {
     display: block;
     top: 50%;
-    margin-top: $hamburger-layer-height / -2;
+    margin-top: math.div($hamburger-layer-height, -2);
   
     &,
     &::before,

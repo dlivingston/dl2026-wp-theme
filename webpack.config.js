@@ -1,13 +1,12 @@
 const path = require('path');
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  entry: { 
+  entry: {
     main: ['./src/index.js', './src/styles/main.scss']
- },
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: "[name].css"
@@ -21,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/, 
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -29,13 +28,14 @@ module.exports = {
             presets: [
               ['@babel/preset-env', {
                 "targets": {
-                  "node": "10",
-                  "chrome": "84",
-                  "firefox": "78",
-                  "safari": "13"
+                  "node": "18",
+                  "chrome": "110",
+                  "firefox": "110",
+                  "safari": "16"
                 }
-              }], 
-              '@babel/preset-react'],
+              }],
+              '@babel/preset-react'
+            ],
             "plugins": ['styled-jsx/babel']
           }
         }
@@ -59,17 +59,17 @@ module.exports = {
         ]
       }
     ]
-  },resolve: {
+  },
+  resolve: {
     extensions: ['.js', '.jsx', '.json']
   },
   optimization: {
     minimize: true,
     minimizer: [
       new TerserPlugin({
-        test: /\.js(\?.*)?$/i,
-        sourceMap: true
+        test: /\.js(\?.*)?$/i
       }),
-      new OptimizeCSSAssetsPlugin({})
+      new CssMinimizerPlugin()
     ]
   }
 }

@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,400i,600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700,700i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300&display=swap');
-@import 'vars';
-
+@use 'fonts';
+@use 'vars' as *;
+@use 'normalize';
+@use 'elements';
+@use 'typography';
+@use 'forms';
+@use 'theme-toggle';
+@use 'logo_and_animations';
+@use 'portfolio';
+@use 'wp-components';
+@use 'code_styles_dark';
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -26,16 +32,6 @@
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-
-@import 'normalize';
-@import 'elements';
-@import 'typography';
-@import 'forms';
-@import 'theme-toggle';
-@import 'logo_and_animations';
-@import 'portfolio';
-@import 'wp-components';
-@import 'code_styles_dark';
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/

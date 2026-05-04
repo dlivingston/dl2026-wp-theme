@@ -7,4 +7,4 @@ body {
 	--link-hover: var(--lt-link-hover);
 }
 
-@import 'code_styles_light';
+@use 'code_styles_light';
