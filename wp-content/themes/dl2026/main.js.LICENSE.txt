@@ -1,182 +1,6 @@
-/*! ../../../_lib/buildFormatLongFn/index.js */
-
-/*! ../../../_lib/buildLocalizeFn/index.js */
-
-/*! ../../../_lib/buildMatchFn/index.js */
-
-/*! ../../../_lib/buildMatchPatternFn/index.js */
-
-/*! ../../../_lib/getUTCDayOfYear/index.js */
-
-/*! ../../../_lib/getUTCISOWeek/index.js */
-
-/*! ../../../_lib/getUTCISOWeekYear/index.js */
-
-/*! ../../../_lib/getUTCWeek/index.js */
-
-/*! ../../../_lib/getUTCWeekYear/index.js */
-
-/*! ../../addLeadingZeros/index.js */
-
-/*! ../../locale/en-US/index.js */
-
-/*! ../../toDate/index.js */
-
-/*! ../_lib/defaultLocale/index.js */
-
-/*! ../_lib/defaultOptions/index.js */
-
-/*! ../_lib/format/formatters/index.js */
-
-/*! ../_lib/format/longFormatters/index.js */
-
-/*! ../_lib/getTimezoneOffsetInMilliseconds/index.js */
-
-/*! ../_lib/protectedTokens/index.js */
-
-/*! ../_lib/requiredArgs/index.js */
-
-/*! ../_lib/toInteger/index.js */
-
-/*! ../addMilliseconds/index.js */
-
-/*! ../cancel/isCancel */
-
-/*! ../constants/index.js */
-
-/*! ../core/buildFullPath */
-
-/*! ../core/createError */
-
-/*! ../defaultOptions/index.js */
-
-/*! ../defaults */
-
-/*! ../getUTCISOWeekYear/index.js */
-
-/*! ../getUTCWeekYear/index.js */
-
-/*! ../helpers/buildURL */
-
-/*! ../helpers/combineURLs */
-
-/*! ../helpers/isAbsoluteURL */
-
-/*! ../isDate/index.js */
-
-/*! ../isValid/index.js */
-
-/*! ../lightFormatters/index.js */
-
-/*! ../requiredArgs/index.js */
-
-/*! ../startOfUTCISOWeek/index.js */
-
-/*! ../startOfUTCISOWeekYear/index.js */
-
-/*! ../startOfUTCWeek/index.js */
-
-/*! ../startOfUTCWeekYear/index.js */
-
-/*! ../subMilliseconds/index.js */
-
-/*! ../toDate/index.js */
-
-/*! ../toInteger/index.js */
-
-/*! ../utils */
-
-/*! ./../core/settle */
-
-/*! ./../helpers/buildURL */
-
-/*! ./../helpers/cookies */
-
-/*! ./../helpers/isURLSameOrigin */
-
-/*! ./../helpers/parseHeaders */
-
-/*! ./../utils */
-
-/*! ./Cancel */
-
-/*! ./InterceptorManager */
-
-/*! ./_lib/formatDistance/index.js */
-
-/*! ./_lib/formatLong/index.js */
-
-/*! ./_lib/formatRelative/index.js */
-
-/*! ./_lib/localize/index.js */
-
-/*! ./_lib/match/index.js */
-
-/*! ./adapters/xhr */
-
-/*! ./cancel/Cancel */
-
-/*! ./cancel/CancelToken */
-
-/*! ./cancel/isCancel */
-
-/*! ./cjs/react-dom.development.js */
-
-/*! ./cjs/react.development.js */
-
-/*! ./cjs/scheduler.development.js */
-
-/*! ./core/Axios */
-
-/*! ./core/mergeConfig */
-
-/*! ./createError */
-
-/*! ./defaults */
-
-/*! ./dispatchRequest */
-
-/*! ./enhanceError */
-
-/*! ./helpers/bind */
-
-/*! ./helpers/normalizeHeaderName */
-
-/*! ./helpers/spread */
-
-/*! ./lib/axios */
-
-/*! ./mergeConfig */
-
-/*! ./transformData */
-
-/*! ./utils */
-
-/*! @babel/runtime/helpers/esm/typeof */
-
-/*! axios */
-
-/*! date-fns */
-
-/*! react */
-
-/*! react-dom */
-
-/*! scheduler */
-
-/*! smoothscroll-polyfill */
-
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-
-/*!******************************!*\
-  !*** ./src/styles/main.scss ***!
-  \******************************/
-
 /**
  * @license React
- * react-dom.development.js
+ * react-dom.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -186,7 +10,7 @@
 
 /**
  * @license React
- * scheduler.development.js
+ * react.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -195,15 +19,11 @@
  */
 
 /**
- * Checks if an event is supported in the current execution environment.
+ * @license React
+ * scheduler.production.min.js
  *
- * NOTE: This will not work correctly for non-generic events such as `change`,
- * `reset`, `load`, `error`, and `select`.
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
- * Borrows from Modernizr.
- *
- * @param {string} eventNameSuffix Event name, e.g. "click".
- * @return {boolean} True if the event is supported.
- * @internal
- * @license Modernizr 3.0.0pre (Custom Build) | MIT
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
