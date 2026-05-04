@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package dl2020
+ * @package dl2026
  */
 
 get_header();

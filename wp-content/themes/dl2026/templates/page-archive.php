@@ -3,7 +3,7 @@
  * Template Name: Archives 
  * Template Post Type: page
  *
- * @package dl2020
+ * @package dl2026
  */
 
 get_header();

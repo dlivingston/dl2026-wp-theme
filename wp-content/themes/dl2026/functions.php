@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package dl2020
+ * @package dl2026
  */
 
 if ( ! function_exists( 'dl2020_setup' ) ) :

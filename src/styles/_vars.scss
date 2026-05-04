@@ -1,34 +1,35 @@
 :root {
-    // Option C — Deep Ink & Teal
-    --teal: #2DD4BF;
-    --teal-light: #5EEAD4;
-    --teal-dark: #0D9488;
+    // Option A — Slate & Amber
+    --amber: #E8971E;
+    --amber-light: #FFD166;
+    --amber-dark: #B86E0C;
+    --cobalt: #1A6FB5;
+    --cobalt-dark: #13345a;
+    --cobalt-light: #0585ed;
     --cyan: #38BDF8;
-    --cyan-dark: #0E7490;
-    --cyan-deeper: #0a5a6f;
 
     // Semantic / retained from prior palette
     --persian-red: #d23430;
 
     // Dark mode
-    --dt-body-bg: #141618;
-    --dt-body-bg-rgb: 20, 22, 24;
-    --dt-content-bg: #1c1f23;
-    --dt-content-bg-rgb: 28, 31, 35;
+    --dt-body-bg: #16181c;
+    --dt-body-bg-rgb: 22, 24, 28;
+    --dt-content-bg: #1f2227;
+    --dt-content-bg-rgb: 31, 34, 39;
     --dt-title-color: #ffffff;
     --dt-content-color: #ced8de;
-    --dt-link-color: var(--teal);
-    --dt-link-hover: var(--teal-light);
+    --dt-link-color: var(--amber);
+    --dt-link-hover: var(--amber-light);
 
     // Light mode
-    --lt-body-bg: #f7f8f9;
-    --lt-body-bg-rgb: 247, 248, 249;
+    --lt-body-bg: #f0f2f4;
+    --lt-body-bg-rgb: 240, 242, 244;
     --lt-content-bg: #ffffff;
     --lt-content-bg-rgb: 255, 255, 255;
     --lt-title-color: #111111;
     --lt-content-color: #4e5e64;
-    --lt-link-color: var(--cyan-dark);
-    --lt-link-hover: var(--cyan-deeper);
+    --lt-link-color: var(--cobalt);
+    --lt-link-hover: var(--cobalt-dark);
 }
 
 $hamburger-padding-x           : 15px !default;

@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package dl2020
+ * @package dl2026
  */
 
 if ( ! function_exists( 'dl2020_posted_on' ) ) :

@@ -18,7 +18,7 @@
     
     .line {
         fill: none;
-        stroke: var(--teal);
+        stroke: var(--cyan);
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 1.5px;
@@ -163,22 +163,22 @@
     z-index: 10;
     .st1 {
         fill: none;
-        stroke: var(--teal);
+        stroke: var(--amber);
         stroke-width: 64;
         stroke-miterlimit: 10;
         stroke-linecap: square;
-        transition: stroke 0.6s;
+        transition: stroke 0.5s;
     }
     .d-line {
         stroke-dasharray: 1450;
         stroke-dashoffset: 0;
-        animation: d-dash .75s ease-out reverse;
+        animation: d-dash .65s ease-out reverse;
     }
     .l-line {
         stroke-dasharray: 1200;
         stroke-dashoffset: 1200;
-        animation: l-dash .75s ease-out forwards;
-        animation-delay: .75s;
+        animation: l-dash .65s ease-out forwards;
+        animation-delay: .65s;
     }
 }
 #circle_animations {
@@ -210,11 +210,11 @@
         }
         .cls-1 {
             fill: none;
-            stroke: var(--teal-light);
+            stroke: var(--amber);
             stroke-width: 20;
             stroke-miterlimit: 10;
             stroke-linecap: round;
-            animation: spin1b 2.5s linear normal infinite;
+            animation: spin1b 2.5s linear normal forwards;
             z-index: 1;
             // display: none;
         }
@@ -245,16 +245,16 @@
 
 [data-theme=light] {
     #wave .line {
-        stroke: var(--cyan-dark);
+        stroke: var(--cobalt-dark);
     }
     #dl_logo_animate {
         .st1 {
-            stroke: var(--cyan-dark);
+            stroke: var(--cobalt);
         }
     }
     #circle_animations {
         .cls-1 {
-            stroke: var(--cyan-dark);
+            stroke: var(--cobalt);
         }
         .cls-2 {
             stroke: var(--teal-dark);

@@ -72,9 +72,9 @@
             transform: scaleX(0);
             transform-origin: left;
             &.html { background-color: var(--persian-red);}
-            &.js { background-color: var(--teal-light);}
+            &.js { background-color: var(--amber-light);}
             &.css { background-color: var(--cyan);}
-            &.ux { background-color: var(--teal);}
+            &.ux { background-color: var(--amber);}
             &.php { background-color: var(--content-color);}
         }
         .meter-wrapper {

@@ -2,7 +2,7 @@
 /**
  * dl2020 Theme Customizer
  *
- * @package dl2020
+ * @package dl2026
  */
 
 /**
