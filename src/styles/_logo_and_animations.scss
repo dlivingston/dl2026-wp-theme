@@ -14,14 +14,16 @@
 #wave {
     width: 100vw;
     height: auto;
+    contain: layout style;
     
     .line {
         fill: none;
         stroke: var(--dodger);
         stroke-linecap: round;
         stroke-linejoin: round;
-        stroke-width: 1px;
-        opacity: 0.5;
+        stroke-width: 1.5px;
+        opacity: 0.4;
+        will-change: opacity;
         animation: wave 6s ease-in-out forwards infinite;
         &.l-1 {
             animation-delay: 0.046875s;
@@ -123,17 +125,14 @@
 }
 @keyframes wave {
     0% {
-        stroke-width: 1px;
-        opacity: 0.5;
+        opacity: 0.4;
     }
     2% {
-        stroke-width: 3px;
-        opacity: 1;
+        opacity: 0.9;
     }
     10%,
     100% {
-        stroke-width: 1px;
-        opacity: 0.5;
+        opacity: 0.4;
     }
 }
 

@@ -92,6 +92,27 @@ Wave uses `--dodger` (#41ADFF) at `opacity: 0.4` — too subtle against light mo
 
 ---
 
+## Typography — Decision
+
+**Decided: 2026-05-03 — DM Sans + DM Mono**
+
+| Role | Font | Weights |
+|---|---|---|
+| Headings / Subheadings | DM Sans | 800 (display), 600 (subhead) |
+| Body copy | DM Sans | 400 regular, 300 light |
+| Nav, badges, code labels, tech tags | DM Mono | 400 |
+
+### Google Fonts Import
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,800&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+```
+
+Implement in `_typography.scss` once palette is confirmed.
+
+---
+
 ## Color Palette — Decision Pending
 
 Three options on the table. Do not implement until owner confirms selection.
