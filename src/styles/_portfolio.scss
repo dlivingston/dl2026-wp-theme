@@ -71,10 +71,10 @@
             transition: transform 0.75s ease-in-out, background-color .6s;
             transform: scaleX(0);
             transform-origin: left;
-            &.html { background-color: var(--flame);}
-            &.js { background-color: var(--sunglow);}
-            &.css { background-color: var(--dodger);}
-            &.ux { background-color: var(--caribbean-green);}
+            &.html { background-color: var(--persian-red);}
+            &.js { background-color: var(--teal-light);}
+            &.css { background-color: var(--cyan);}
+            &.ux { background-color: var(--teal);}
             &.php { background-color: var(--content-color);}
         }
         .meter-wrapper {

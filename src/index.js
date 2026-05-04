@@ -51,7 +51,7 @@ window.onload = (event) => {
         setTimeout(() => {
             document.body.dataset.state = "loaded";
             window.sessionStorage.setItem('dl_session_visited', true);
-        }, 5000);
+        }, 60000); // TEMP: extended for animation review
     }
     
     if(skillList) {

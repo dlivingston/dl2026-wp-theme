@@ -8,15 +8,20 @@ select,
 optgroup,
 textarea {
 	color: var(--content-color);
-	font-family: 'Raleway', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+h1, h2 {
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 200;
+}
+
+h3, h4, h5, h6 {
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 600;
 }
 
 p {
@@ -38,7 +43,7 @@ address {
 
 pre {
 	background: var(--content-bg);
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'DM Mono', monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.6;
@@ -48,7 +53,7 @@ pre {
 }
 
 code, kbd, tt, var {
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'DM Mono', monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
