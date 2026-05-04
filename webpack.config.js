@@ -14,7 +14,7 @@ module.exports = {
     })
   ],
   output: {
-    path: path.resolve(__dirname, "wp-content/themes/dl2020"),
+    path: path.resolve(__dirname, "wp-content/themes/dl2026"),
     filename: "[name].js"
   },
   devtool: "source-map",

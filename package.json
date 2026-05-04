@@ -1,5 +1,5 @@
 {
-  "name": "dl2020-wp-theme",
+  "name": "dl2026-wp-theme",
   "version": "1.2.1",
   "description": "Wordpress Theme and build tools for DonLivingston.me",
   "main": "index.js",
@@ -41,7 +41,7 @@
   "author": "Don Livingston",
   "repository": {
     "type": "git",
-    "url": "git@github.com:dlivingston/dl2020-wp-theme.git"
+    "url": "git@github.com:dlivingston/dl2026-wp-theme.git"
   },
   "license": "ISC"
 }
