@@ -38,152 +38,91 @@
     }
 }
 
-.skills {
-    .skill-bars {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        .skill-bar {            
-            margin-bottom: 0.5rem;
-            flex-wrap: wrap;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            .skill-label {
-                display: flex;
-                align-items: center;
-                font-weight: bold;
-                width: 100%;
-                margin-bottom: 0.25rem;
-            }
-            &:nth-child(1) .skill-meter { transition-delay: 0.1s; }
-            &:nth-child(2) .skill-meter { transition-delay: 0.2s; }
-            &:nth-child(3) .skill-meter { transition-delay: 0.3s; }
-            &:nth-child(4) .skill-meter { transition-delay: 0.4s; }
-            &:nth-child(5) .skill-meter { transition-delay: 0.5s; }
-            &:nth-child(6) .skill-meter { transition-delay: 0.6s; }
-        }
-        .skill-meter {
-            width: 100%;
-            height: 100%;
-            transition: transform 0.75s ease-in-out, background-color .6s;
-            transform: scaleX(0);
-            transform-origin: left;
-            &.html { background-color: var(--persian-red);}
-            &.js { background-color: var(--amber-light);}
-            &.css { background-color: var(--cyan);}
-            &.ux { background-color: var(--amber);}
-            &.php { background-color: var(--content-color);}
-        }
-        .meter-wrapper {
-            flex: 1 1 auto;
-            height: 30px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            background-color: var(--body-bg);
-            transition: background-color .6s;
-            &>.level {
-                position: absolute;
-                left: 0.25rem;
-                color: var(--body-bg);
-                transition: color .6s;
-            }
-        }
-        .skill-icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 0.5rem;
-            width: 30px;
-            svg {
-                height: 30px;
-                width: auto;
-            }
-        }
-        @media (min-width: 800px) {
-            .skill-bar {
-                height: 40px;
-                flex-wrap: nowrap;
-                .skill-label {
-                    flex: 0 0 140px;
-                    width: 140px;
-                    margin-bottom: 0;
-                    margin-right: 0.5rem;
-                    line-height: 1.1;
-                }
-            }
-            .meter-wrapper {
-                height: 40px
-            }
-        }
+@keyframes chip-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
     }
 }
 
-.other-skills {
-    padding: 2rem 0;
-    h2, p {
-        text-align: center;
+.skills {
+    .skill-groups {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
-    h2 {
-        margin-bottom: 0;
+
+    .skill-group {
+        > h3 {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.7rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--content-color);
+            opacity: 0.65;
+            margin: 0 0 0.625rem;
+            transition: color 0.6s;
+        }
     }
-    .skill-list {
+
+    .chip-grid {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        background-color: var(--body-bg);
-        transition: background-color 0.6s;
-        padding: .75rem;
-        .col {
-            flex: 0 0 45%;
-            margin: 0.5rem;
-            h4 {
-                margin: 0 0 0.5rem 0;
-                line-height: 1.2;
-                &:after {
-                    content: '';
-                    display: block;
-                    width: 40%;
-                    height: 2px;
-                    margin-top: 3px;
-                    background-color: var(--link-color);
-                    transition: background-color .6s;
-                }
-            }
-            ul {
-                margin: 0;
-                padding: 0; 
-                list-style: none;
-                li {
-                    &:before {
-                        content: '\2022';
-                        display: inline-block;
-                        font-size: 1.5rem;
-                        margin-right: 0.25rem;
-                        line-height: 0.5
-                    }
-                    font-size: 0.875rem;
-                    line-height: 1.5;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                }
-            }
+        gap: 0.4rem;
+    }
+
+    .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.3rem 0.7rem;
+        border-radius: 999px;
+        border: 0.5px solid var(--chip-border);
+        background-color: var(--chip-bg);
+        font-size: 0.8125rem;
+        color: var(--content-color);
+        opacity: 0;
+        transition: border-color 0.6s, background-color 0.6s, color 0.6s;
+
+        img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        img.adapt-dark {
+            filter: invert(1);
+        }
+
+        &.core {
+            background-color: var(--chip-core-bg);
+            border-color: var(--chip-core-border);
+        }
+
+        &.text-only {
+            font-style: italic;
         }
     }
-    @media (min-width: 800px) {
-        .skill-list {
-            padding: 1.5rem;
-            .col {
-                flex: 0 0 25%;
-            }
+
+    &[data-scroll-view=view] {
+        .chip {
+            animation: chip-fade-in 0.35s ease forwards;
         }
+        .skill-group:nth-child(2) .chip { animation-delay: 0.1s; }
+        .skill-group:nth-child(3) .chip { animation-delay: 0.2s; }
+        .skill-group:nth-child(4) .chip { animation-delay: 0.3s; }
+        .skill-group:nth-child(5) .chip { animation-delay: 0.4s; }
     }
+}
+
+[data-theme=light] .skills .chip img.adapt-dark {
+    filter: none;
 }
 
 .project-gallery {

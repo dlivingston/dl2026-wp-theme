@@ -22,6 +22,10 @@ body {
     --content-color:  var(--dt-content-color);
 	--link-color: var(--dt-link-color);
 	--link-hover: var(--dt-link-hover);
+    --chip-bg: rgba(255, 255, 255, 0.05);
+    --chip-border: rgba(255, 255, 255, 0.12);
+    --chip-core-bg: rgba(26, 111, 181, 0.15);
+    --chip-core-border: rgba(26, 111, 181, 0.45);
 }
 [data-theme=light] {
     body {
@@ -32,6 +36,10 @@ body {
         --content-color:  var(--lt-content-color);
         --link-color: var(--lt-link-color);
         --link-hover: var(--lt-link-hover);
+        --chip-bg: rgba(0, 0, 0, 0.04);
+        --chip-border: rgba(0, 0, 0, 0.12);
+        --chip-core-bg: rgba(26, 111, 181, 0.08);
+        --chip-core-border: rgba(26, 111, 181, 0.3);
     }
 }
 

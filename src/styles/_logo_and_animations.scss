@@ -479,39 +479,3 @@ body {
     }
 
 }
-.skills[data-scroll-view=view] {
-    .circle-meter {
-        &>circle.meter {
-            &[data-meter-strength="100"] {
-                stroke-dashoffset: 0;
-            }
-            &[data-meter-strength="90"] {
-                stroke-dashoffset: 35.2;
-            }
-            &[data-meter-strength="80"] {
-                stroke-dashoffset: 70.4;
-            }
-            &[data-meter-strength="50"] {
-                stroke-dashoffset: 176;
-            }
-            &[data-meter-strength="25"] {
-                stroke-dashoffset: 264;
-            }
-        }
-    }
-    .skill-bars {
-        .skill-meter {
-            &[aria-valuenow="95"] { transform: scaleX(0.95) }
-            &[aria-valuenow="90"] { transform: scaleX(0.9) }
-            &[aria-valuenow="80"] { transform: scaleX(0.8) }
-            &[aria-valuenow="70"] { transform: scaleX(0.7) }
-            &[aria-valuenow="60"] { transform: scaleX(0.6) }
-            &[aria-valuenow="50"] { transform: scaleX(0.5) }
-            &[aria-valuenow="40"] { transform: scaleX(0.4) }
-            &[aria-valuenow="30"] { transform: scaleX(0.3) }
-            &[aria-valuenow="20"] { transform: scaleX(0.2) }
-            &[aria-valuenow="10"] { transform: scaleX(0.1) }   
-        }
-    }
-
-}

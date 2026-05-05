@@ -113,9 +113,11 @@ Implement in `_typography.scss` once palette is confirmed.
 
 ---
 
-## Color Palette — Decision Pending
+## Color Palette — Decided
 
-Three options on the table. Do not implement until owner confirms selection.
+**Decided: 2026-05-04 — Option A (Slate & Amber)**
+
+Went back and forth between Option A and Option C (Deep Ink & Teal) before settling on A. Already implemented in the theme.
 
 ### Option A — Slate & Amber (most conservative)
 - Dark bg: `#16181c` / `#1f2227` | Accent: `#E8971E` | Wave: `#38BDF8`
@@ -143,7 +145,7 @@ Elements can be mixed across options. Implement in `_vars.scss` once decided.
 - Real headshot
 
 ### Update
-- Skill bar/percentage charts → clean technology badge grid
+- Skill bar/percentage charts → icon badge grid (Devicons, decided 2026-05-04 — see Obsidian notes for full spec)
 - Headline/tagline → reflect senior consulting positioning
 - Skills list → remove dated tools (Grunt, Bower, jQuery, PHP prominence), add TypeScript, Next.js, Tailwind, AI tooling
 - Blog section → remove from dlwebworx.com
