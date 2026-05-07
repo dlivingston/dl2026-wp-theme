@@ -1,6 +1,6 @@
 {
   "name": "dl2026-wp-theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Wordpress Theme and build tools for DonLivingston.me",
   "main": "index.js",
   "dependencies": {

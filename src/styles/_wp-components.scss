@@ -5,13 +5,14 @@
     margin-top: 55px;
 }
 h1.site-title {
-    font-size: 2rem;
+    font-size: 3rem;
+    letter-spacing: 2.5;
     text-transform: uppercase;
     margin-bottom: 1rem;
     color: var(--link-color);
 }
 h2.site-title {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
     a {
@@ -22,6 +23,7 @@ h2.site-title {
     }
 }
 .site-description {
+    font-size: 1.75rem;
     max-width: 800px;
     margin: 1rem 10vw 1.5rem 10vw;
     @media (min-width: 800px) {
